@@ -1,0 +1,19 @@
+{
+  "name": "waf-spike",
+  "version": "1.0.0",
+  "description": "## Goal This project shall:  - Create a REST API Stub for Incident Creations and will support basic CRUD. - Incidents will contain a: create data, Id, type, title, description - The stub will use javascipt and node - The stub should use json-serve container image - A data file called db.json should be used to seed the rest API - The datafile should be generated using faker-js - Generating a realistic description for incidents is the key as this will allow us to test the WAF",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate": "node src/generate-data.js",
+    "test-api": "node src/generate-requests.js",
+    "test-api-v2": "node src/generate-requests-v2.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@faker-js/faker": "^9.6.0",
+    "axios": "^1.8.4"
+  }
+}

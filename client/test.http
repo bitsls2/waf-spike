@@ -1,0 +1,11 @@
+### request first incident
+http://localhost:9999/incidents/eff43a9a-9515-41f0-ac63-4ed77d461a50
+
+
+### update first incident
+PATCH  http://localhost:9999/incidents/eff43a9a-9515-41f0-ac63-4ed77d461a50
+Content-Type: application/json
+
+{
+  "description": "Look at this new description"
+}
