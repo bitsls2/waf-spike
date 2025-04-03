@@ -107,3 +107,22 @@ curl -H "Host: localhost" http://localhost/incidents
 ```bash
 kubectl logs -n ingress-nginx -l app.kubernetes.io/name=ingress-nginx
 ```
+Apply the ConfigMap:
+
+```
+kubectl apply -f k8s/modsec-configmap.yaml
+```
+Then update the ingress controller with the new configuration:
+
+```
+helm upgrade ingress-nginx ingress-nginx/ingress-nginx \
+  --namespace ingress-nginx \
+  --values k8s/ingress-values.yaml
+```
+
+This configuration:
+
+Creates exceptions for health check endpoints
+Reduces WAF restrictions on the /incidents endpoint
+Allows larger request bodies for incident creation
+
