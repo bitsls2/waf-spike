@@ -96,3 +96,11 @@ This script will:
 - Delete an incident
 
 Make sure your json-server is running before executing this script. The script assumes json-server is running on the default port 3000.
+
+Faker-js was used to create initial test data. Then copilot was used to create additional test data. The following descriptions were used to generate test data.
+
+Update the descriptions in each incident so that the description describes customer service incidents which involve bad language , abusive behavior and has raised concerns for customers service representatives
+
+Create 20 further incidents items based on the existing entries. Use characters and words that are likely to cause 403 response from the OWASP core rule set, which could be consider to be false positives. 
+
+Create an additional 40 incidents so that the description describes customer service incidents which involve bad language , abusive behavior and has raised safeguarding concerns for customers service representatives. Each description could contain multiple paragraphs and punctuation.

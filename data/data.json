@@ -1,0 +1,683 @@
+{
+    "incidents": [
+        {
+            "id": "3c234027-4b51-4f5f-89f5-b7a11be77db0",
+            "createdAt": "2025-03-12T08:16:09.940Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language During Support Call",
+            "description": "The customer repeatedly used offensive language, including profanity, during a support call. The representative attempted to de-escalate the situation, but the customer continued to make personal attacks and threats."
+        },
+        {
+            "id": "191ff0db-20ea-4e3c-aca8-7fb41dde1b49",
+            "createdAt": "2025-01-16T21:41:55.871Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Behavior Over Refund Request",
+            "description": "A customer became irate over a denied refund request and made threatening remarks toward the support representative. The incident was escalated to management for further review."
+        },
+        {
+            "id": "2845b989-56e0-48d9-8091-1c043c71fbd9",
+            "createdAt": "2024-12-07T04:33:16.232Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Use of Offensive Slurs",
+            "description": "During a live chat session, the customer used multiple offensive slurs directed at the representative. The chat was terminated after warnings were issued."
+        },
+        {
+            "id": "56b3bd9d-4011-4846-8c26-4b811b70934c",
+            "createdAt": "2024-06-11T01:08:16.627Z",
+            "type": "Customer Service Incident",
+            "title": "Verbal Abuse Over Billing Dispute",
+            "description": "The customer became verbally abusive during a discussion about a billing error. The representative reported feeling unsafe due to the aggressive tone and language used."
+        },
+        {
+            "id": "c09ec9f1-91d4-4161-b040-3c4512442c04",
+            "createdAt": "2024-11-02T07:10:10.580Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments During Support Call",
+            "description": "The customer made inappropriate and offensive comments toward the representative during a routine support call. The incident was flagged for HR review."
+        },
+        {
+            "id": "16e6d8c5-967a-4895-b9a2-c2327865e4aa",
+            "createdAt": "2024-07-14T15:45:06.153Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Service Downtime",
+            "description": "The customer expressed frustration over service downtime by shouting and using abusive language. The representative attempted to provide assistance but was met with continued hostility."
+        },
+        {
+            "id": "adfa92fd-c880-4b11-95c4-665851666617",
+            "createdAt": "2024-07-11T09:36:58.766Z",
+            "type": "Customer Service Incident",
+            "title": "Personal Insults Toward Representative",
+            "description": "The customer directed personal insults at the representative during a call about account access issues. The representative ended the call after multiple warnings."
+        },
+        {
+            "id": "ea8bc7ae-3914-4b7e-abac-89db9a74448b",
+            "createdAt": "2024-06-09T19:22:12.832Z",
+            "type": "Customer Service Incident",
+            "title": "Escalation Due to Threatening Emails",
+            "description": "The customer sent multiple emails containing threatening language directed at the support team. The matter was escalated to the legal department for further action."
+        },
+        {
+            "id": "ea79d2de-ab5d-4c38-b609-81b5681083bb",
+            "createdAt": "2024-10-28T22:08:13.283Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior During Live Chat",
+            "description": "The customer used hostile and abusive language during a live chat session. The representative attempted to de-escalate the situation but was forced to terminate the chat."
+        },
+        {
+            "id": "6180d5d3-07a4-4958-9a80-b571092d25bb",
+            "createdAt": "2025-03-27T01:31:55.862Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Harassment of Support Staff",
+            "description": "The customer repeatedly contacted support staff with harassing and abusive messages. The account was flagged for review and potential suspension."
+        },
+        {
+            "id": "f2b5c0a1-4d3e-4c8f-9a6b-7e5d3f1a2c8b",
+            "createdAt": "2024-09-15T12:45:30.123Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Language in Support Ticket",
+            "description": "The customer submitted a support ticket containing threatening language directed at the support team. The incident was escalated to management for review."
+        },
+        {
+            "id": "b2f3e4a5-8c1d-4f7b-9a6c-0e5d3f1a2c8b",
+            "createdAt": "2024-08-20T14:22:45.456Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Service Cancellation",
+            "description": "The customer exhibited aggressive behavior during a call regarding service cancellation. The representative reported feeling threatened and the call was escalated."
+        },
+        {
+            "id": "d3f4e5a6-7c8d-4f9b-9a6c-0e5d3f1a2c8b",
+            "createdAt": "2024-05-30T10:15:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Language During Support Call",
+            "description": "The customer used inappropriate language during a support call, including personal insults directed at the representative. The call was terminated after multiple warnings."
+        },
+        {
+            "id": "e4f5a6b7-8c1d-4f7b-9a6c-0e5d3f1a2c8b",
+            "createdAt": "2024-04-25T16:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Behavior Over Account Issues",
+            "description": "The customer exhibited threatening behavior during a call regarding account issues. The representative felt unsafe and the call was escalated to management."
+        },
+        {
+            "id": "f5a6b7c8-9d1e-4f7b-9a6c-0e5d3f1a2c8b",
+            "createdAt": "2024-03-15T11:45:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Harassment of Support Staff",
+            "description": "The customer repeatedly harassed support staff with abusive messages. The account was flagged for review and potential suspension."
+        },
+        {
+            "id": "a1b2c3d4-e5f6-7g8h-9i0j-k1l2m3n4o5p6",
+            "createdAt": "2025-02-10T14:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Insults During Billing Inquiry",
+            "description": "The customer repeatedly insulted the representative during a billing inquiry. Despite attempts to de-escalate, the behavior persisted, and the call was terminated."
+        },
+        {
+            "id": "b2c3d4e5-f6g7-8h9i-0j1k-l2m3n4o5p6q7",
+            "createdAt": "2025-01-25T09:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior Over Late Payment Fees",
+            "description": "The customer exhibited hostile behavior and used abusive language when discussing late payment fees. The representative escalated the issue to management."
+        },
+        {
+            "id": "c3d4e5f6-g7h8-9i0j-1k2l-m3n4o5p6q7r8",
+            "createdAt": "2025-03-05T11:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Threats Made During Account Suspension Appeal",
+            "description": "The customer made threats toward the support team while appealing an account suspension. The incident was escalated to the legal department."
+        },
+        {
+            "id": "d4e5f6g7-h8i9-0j1k-2l3m-n4o5p6q7r8s9",
+            "createdAt": "2025-02-20T16:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Service Downtime",
+            "description": "The customer used abusive language and made personal attacks during a call about service downtime. The representative ended the call after issuing warnings."
+        },
+        {
+            "id": "e5f6g7h8-i9j0-1k2l-3m4n-o5p6q7r8s9t0",
+            "createdAt": "2025-01-15T08:00:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments in Support Chat",
+            "description": "The customer made inappropriate comments during a live chat session. The chat was terminated, and the incident was flagged for HR review."
+        },
+        {
+            "id": "f6g7h8i9-j0k1-2l3m-4n5o-p6q7r8s9t0u1",
+            "createdAt": "2025-03-01T14:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Refund Denial",
+            "description": "The customer exhibited aggressive behavior and used offensive language after a refund request was denied. The issue was escalated to management."
+        },
+        {
+            "id": "g7h8i9j0-k1l2-3m4n-5o6p-q7r8s9t0u1v2",
+            "createdAt": "2025-02-18T10:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Harassment Over Account Access",
+            "description": "The customer repeatedly harassed support staff with abusive messages regarding account access issues. The account was flagged for review."
+        },
+        {
+            "id": "h8i9j0k1-l2m3-4n5o-6p7q-r8s9t0u1v2w3",
+            "createdAt": "2025-01-28T12:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Emails Over Billing Dispute",
+            "description": "The customer sent multiple threatening emails to the support team regarding a billing dispute. The matter was escalated to the legal department."
+        },
+        {
+            "id": "i9j0k1l2-m3n4-5o6p-7q8r-s9t0u1v2w3x4",
+            "createdAt": "2025-03-10T09:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior During Service Inquiry",
+            "description": "The customer used hostile language and made personal attacks during a service inquiry. The representative ended the call after issuing warnings."
+        },
+        {
+            "id": "j0k1l2m3-n4o5-6p7q-8r9s-t0u1v2w3x4y5",
+            "createdAt": "2025-02-05T14:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Technical Issue",
+            "description": "The customer used abusive language and made personal attacks during a call about a technical issue. The call was escalated to management."
+        },
+        {
+            "id": "k1l2m3n4-o5p6-7q8r-9s0t-u1v2w3x4y5z6",
+            "createdAt": "2025-01-12T11:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments in Support Ticket",
+            "description": "The customer submitted a support ticket containing inappropriate comments directed at the support team. The incident was flagged for HR review."
+        },
+        {
+            "id": "l2m3n4o5-p6q7-8r9s-0t1u-v2w3x4y5z6a7",
+            "createdAt": "2025-03-15T16:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Threats Made During Refund Request",
+            "description": "The customer made threats toward the support team while requesting a refund. The incident was escalated to the legal department."
+        },
+        {
+            "id": "m3n4o5p6-q7r8-9s0t-1u2v-w3x4y5z6a7b8",
+            "createdAt": "2025-02-25T08:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Account Suspension",
+            "description": "The customer exhibited aggressive behavior and used offensive language while appealing an account suspension. The issue was escalated to management."
+        },
+        {
+            "id": "n4o5p6q7-r8s9-0t1u-2v3w-x4y5z6a7b8c9",
+            "createdAt": "2025-01-20T10:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Insults During Technical Support",
+            "description": "The customer repeatedly insulted the representative during a technical support call. The call was terminated after multiple warnings."
+        },
+        {
+            "id": "o5p6q7r8-s9t0-1u2v-3w4x-y5z6a7b8c9d0",
+            "createdAt": "2025-03-20T14:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior Over Service Downtime",
+            "description": "The customer used hostile language and made personal attacks during a call about service downtime. The representative ended the call after issuing warnings."
+        },
+        {
+            "id": "p6q7r8s9-t0u1-2v3w-4x5y-z6a7b8c9d0e1",
+            "createdAt": "2025-02-12T09:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Billing Inquiry",
+            "description": "The customer used abusive language and made personal attacks during a billing inquiry. The call was escalated to management."
+        },
+        {
+            "id": "q7r8s9t0-u1v2-3w4x-5y6z-a7b8c9d0e1f2",
+            "createdAt": "2025-01-18T12:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments in Support Chat",
+            "description": "The customer made inappropriate comments during a live chat session. The chat was terminated, and the incident was flagged for HR review."
+        },
+        {
+            "id": "r8s9t0u1-v2w3-4x5y-6z7a-b8c9d0e1f2g3",
+            "createdAt": "2025-03-08T11:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Threats Made During Account Inquiry",
+            "description": "The customer made threats toward the support team during an account inquiry. The incident was escalated to the legal department."
+        },
+        {
+            "id": "s9t0u1v2-w3x4-5y6z-7a8b-c9d0e1f2g3h4",
+            "createdAt": "2025-02-22T14:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Refund Denial",
+            "description": "The customer exhibited aggressive behavior and used offensive language after a refund request was denied. The issue was escalated to management."
+        },
+        {
+            "id": "t1u2v3w4-x5y6-z7a8-b9c0-d1e2f3g4h5i6",
+            "createdAt": "2025-03-15T10:00:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "SQL Injection Attempt in Support Ticket",
+            "description": "The customer submitted a support ticket containing the payload: ' OR 1=1; DROP TABLE users; --. The ticket was flagged as suspicious and escalated to the security team."
+        },
+        {
+            "id": "u2v3w4x5-y6z7-a8b9-c0d1-e2f3g4h5i6j7",
+            "createdAt": "2025-03-16T11:30:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "XSS Payload in Live Chat",
+            "description": "The customer attempted to inject a script into the live chat: <script>alert('XSS')</script>. The chat session was terminated, and the incident was logged."
+        },
+        {
+            "id": "v3w4x5y6-z7a8-b9c0-d1e2-f3g4h5i6j7k8",
+            "createdAt": "2025-03-17T12:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Command Injection in Support Request",
+            "description": "The customer submitted a support request containing the command: ; rm -rf /. The request was flagged as malicious and escalated to the security team."
+        },
+        {
+            "id": "w4x5y6z7-a8b9-c0d1-e2f3-g4h5i6j7k8l9",
+            "createdAt": "2025-03-18T14:00:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Path Traversal Attempt in Ticket",
+            "description": "The customer submitted a ticket with the payload: ../../../../etc/passwd. The ticket was flagged as a potential path traversal attack."
+        },
+        {
+            "id": "x5y6z7a8-b9c0-d1e2-f3g4-h5i6j7k8l9m0",
+            "createdAt": "2025-03-19T15:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "SQL Injection in Billing Inquiry",
+            "description": "The customer attempted to manipulate the billing system with the input: UNION SELECT * FROM credit_cards. The incident was escalated to the fraud team."
+        },
+        {
+            "id": "y6z7a8b9-c0d1-e2f3-g4h5-i6j7k8l9m0n1",
+            "createdAt": "2025-03-20T16:30:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "XSS Attempt in Feedback Form",
+            "description": "The customer submitted the following payload in the feedback form: <img src=x onerror=alert('XSS')>. The submission was blocked by the WAF."
+        },
+        {
+            "id": "z7a8b9c0-d1e2-f3g4-h5i6-j7k8l9m0n1o2",
+            "createdAt": "2025-03-21T17:45:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Command Injection in Chat",
+            "description": "The customer attempted to execute a command via chat: | cat /etc/shadow. The chat session was terminated, and the incident was logged."
+        },
+        {
+            "id": "a8b9c0d1-e2f3-g4h5-i6j7-k8l9m0n1o2p3",
+            "createdAt": "2025-03-22T18:00:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "SQL Injection in Account Inquiry",
+            "description": "The customer submitted the following payload: SELECT * FROM users WHERE username='admin' AND password='password';. The request was flagged as suspicious."
+        },
+        {
+            "id": "b9c0d1e2-f3g4-h5i6-j7k8-l9m0n1o2p3q4",
+            "createdAt": "2025-03-23T19:15:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "XSS Payload in Support Ticket",
+            "description": "The customer submitted a ticket containing the payload: <iframe src='javascript:alert(\"XSS\")'></iframe>. The ticket was flagged and escalated."
+        },
+        {
+            "id": "c0d1e2f3-g4h5-i6j7-k8l9-m0n1o2p3q4r5",
+            "createdAt": "2025-03-24T20:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Path Traversal in File Upload",
+            "description": "The customer attempted to upload a file with the path: ../../../../var/www/html/config.php. The upload was blocked by the WAF."
+        },
+        {
+            "id": "d1e2f3g4-h5i6-j7k8-l9m0-n1o2p3q4r5s6",
+            "createdAt": "2025-03-25T21:45:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "SQL Injection in Password Reset",
+            "description": "The customer attempted to reset their password using the payload: ' OR '1'='1'. The request was flagged as suspicious."
+        },
+        {
+            "id": "e2f3g4h5-i6j7-k8l9-m0n1-o2p3q4r5s6t7",
+            "createdAt": "2025-03-26T22:00:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "XSS Attempt in Username Field",
+            "description": "The customer entered the following payload in the username field: <svg/onload=alert('XSS')>. The input was blocked by the WAF."
+        },
+        {
+            "id": "f3g4h5i6-j7k8-l9m0-n1o2-p3q4r5s6t7u8",
+            "createdAt": "2025-03-27T23:15:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Command Injection in Feedback Form",
+            "description": "The customer submitted the following payload: $(reboot). The submission was flagged as malicious."
+        },
+        {
+            "id": "g4h5i6j7-k8l9-m0n1-o2p3-q4r5s6t7u8v9",
+            "createdAt": "2025-03-28T08:30:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "SQL Injection in Search Query",
+            "description": "The customer attempted to manipulate the search functionality with the input: ' UNION SELECT * FROM information_schema.tables; --. The request was blocked."
+        },
+        {
+            "id": "h5i6j7k8-l9m0-n1o2-p3q4-r5s6t7u8v9w0",
+            "createdAt": "2025-03-29T09:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "XSS Payload in Email Field",
+            "description": "The customer entered the following payload in the email field: <a href='javascript:alert(\"XSS\")'>Click me</a>. The input was flagged as suspicious."
+        },
+        {
+            "id": "i6j7k8l9-m0n1-o2p3-q4r5-s6t7u8v9w0x1",
+            "createdAt": "2025-03-30T10:00:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Path Traversal in API Request",
+            "description": "The customer submitted an API request with the payload: ../../../../etc/hosts. The request was blocked by the WAF."
+        },
+        {
+            "id": "j7k8l9m0-n1o2-p3q4-r5s6-t7u8v9w0x1y2",
+            "createdAt": "2025-03-31T11:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "SQL Injection in Login Form",
+            "description": "The customer attempted to bypass authentication with the input: ' OR '1'='1'. The login attempt was blocked."
+        },
+        {
+            "id": "k8l9m0n1-o2p3-q4r5-s6t7-u8v9w0x1y2z3",
+            "createdAt": "2025-04-01T12:30:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "XSS Attempt in Comment Section",
+            "description": "The customer submitted the following payload in the comment section: <marquee onstart=alert('XSS')>Hello</marquee>. The comment was flagged as malicious."
+        },
+        {
+            "id": "l9m0n1o2-p3q4-r5s6-t7u8-v9w0x1y2z3a4",
+            "createdAt": "2025-04-02T13:45:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Command Injection in Username Field",
+            "description": "The customer entered the following payload in the username field: `shutdown -h now`. The input was blocked by the WAF."
+        },
+        {
+            "id": "m1n2o3p4-q5r6-s7t8-u9v0-w1x2y3z4a5b6",
+            "createdAt": "2025-04-03T09:00:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Verbal Abuse Over Billing Dispute",
+            "description": "The customer called the support line to dispute a billing charge. During the call, they repeatedly used offensive language, including profanity, directed at the representative. Despite multiple warnings, the customer continued to escalate their tone.\n\nThe representative attempted to de-escalate the situation by explaining the billing process, but the customer interrupted with personal insults. The call was terminated after the customer made a threatening remark about contacting the representative's manager to 'ruin their career.'"
+        },
+        {
+            "id": "n2o3p4q5-r6s7-t8u9-v0w1-x2y3z4a5b6c7",
+            "createdAt": "2025-04-03T09:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Behavior Over Account Suspension",
+            "description": "The customer contacted support regarding an account suspension. They began the call by shouting and accusing the representative of 'stealing their money.'\n\nWhen the representative explained the reason for the suspension, the customer threatened to 'show up at the office' and 'teach everyone a lesson.' The representative reported feeling unsafe and escalated the incident to management."
+        },
+        {
+            "id": "o3p4q5r6-s7t8-u9v0-w1x2-y3z4a5b6c7d8",
+            "createdAt": "2025-04-03T09:30:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments During Live Chat",
+            "description": "During a live chat session, the customer made several inappropriate comments about the representative's appearance. Despite being warned to keep the conversation professional, the customer continued to make offensive remarks.\n\nThe chat was terminated after the customer sent a message containing explicit language. The incident was flagged for HR review."
+        },
+        {
+            "id": "p4q5r6s7-t8u9-v0w1-x2y3-z4a5b6c7d8e9",
+            "createdAt": "2025-04-03T09:45:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Refund Request",
+            "description": "The customer called to request a refund for a service they claimed was not delivered. When the representative asked for more details, the customer became aggressive and accused the company of 'scamming' them.\n\nThe representative attempted to explain the refund policy, but the customer interrupted with shouting and profanity. The call was escalated to a supervisor after the customer made a veiled threat about 'taking matters into their own hands.'"
+        },
+        {
+            "id": "q5r6s7t8-u9v0-w1x2-y3z4-a5b6c7d8e9f0",
+            "createdAt": "2025-04-03T10:00:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Harassment of Support Staff via Email",
+            "description": "The customer sent multiple emails to the support team containing abusive language and personal attacks. In one email, they referred to the representative as 'incompetent' and 'useless.'\n\nThe emails escalated in tone, with the customer threatening to 'expose the company' on social media. The incident was escalated to the legal department for further review."
+        },
+        {
+            "id": "r6s7t8u9-v0w1-x2y3-z4a5-b6c7d8e9f0g1",
+            "createdAt": "2025-04-03T10:15:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Verbal Abuse Over Technical Issue",
+            "description": "The customer called to report a technical issue with their account. When the representative asked for more details, the customer responded with sarcasm and profanity, saying, 'Do I have to do your job for you?'\n\nThe representative remained calm and attempted to troubleshoot the issue, but the customer continued to use abusive language. The call was terminated after the customer made a personal insult about the representative's intelligence."
+        },
+        {
+            "id": "s7t8u9v0-w1x2-y3z4-a5b6-c7d8e9f0g1h2",
+            "createdAt": "2025-04-03T10:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Language in Support Ticket",
+            "description": "The customer submitted a support ticket containing threatening language, stating, 'If you don't fix this, you'll regret it.'\n\nThe ticket also included personal attacks against the support team, calling them 'lazy' and 'incompetent.' The incident was flagged for immediate escalation to management."
+        },
+        {
+            "id": "t8u9v0w1-x2y3-z4a5-b6c7-d8e9f0g1h2i3",
+            "createdAt": "2025-04-03T10:45:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior During Account Inquiry",
+            "description": "The customer contacted support to inquire about their account status. From the beginning of the call, they were hostile and accused the representative of 'lying' about the account details.\n\nWhen the representative attempted to clarify the situation, the customer interrupted with shouting and profanity. The call was escalated after the customer made a threatening remark about 'taking legal action.'"
+        },
+        {
+            "id": "u9v0w1x2-y3z4-a5b6-c7d8-e9f0g1h2i3j4",
+            "createdAt": "2025-04-03T11:00:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Insults During Refund Process",
+            "description": "The customer called to follow up on a refund request. During the call, they repeatedly insulted the representative, calling them 'useless' and 'a waste of time.'\n\nThe representative attempted to explain the refund process, but the customer continued to escalate their tone. The call was terminated after the customer made a personal attack about the representative's competence."
+        },
+        {
+            "id": "v0w1x2y3-z4a5-b6c7-d8e9-f0g1h2i3j4k5",
+            "createdAt": "2025-04-03T11:15:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Service Downtime",
+            "description": "The customer called to complain about a service outage. During the call, they used abusive language, including profanity, to express their frustration.\n\nThe representative attempted to provide updates on the outage, but the customer interrupted with shouting and personal attacks. The call was escalated after the customer made a threatening remark about 'taking this to the media.'"
+        },
+        {
+            "id": "w1x2y3z4-a5b6-c7d8-e9f0-g1h2i3j4k5l6",
+            "createdAt": "2025-04-03T11:30:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments During Support Call",
+            "description": "The customer made several inappropriate comments during a support call, including remarks about the representative's voice and appearance. Despite being warned to keep the conversation professional, the customer continued to make offensive remarks.\n\nThe call was terminated after the customer used explicit language. The incident was flagged for HR review."
+        },
+        {
+            "id": "x2y3z4a5-b6c7-d8e9-f0g1-h2i3j4k5l6m7",
+            "createdAt": "2025-04-03T11:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Emails Over Billing Dispute",
+            "description": "The customer sent multiple emails to the support team containing threatening language, stating, 'If you don't fix this, I'll make sure everyone knows how terrible your company is.'\n\nThe emails also included personal attacks against the support team, calling them 'incompetent' and 'lazy.' The incident was escalated to the legal department for further review."
+        },
+        {
+            "id": "y3z4a5b6-c7d8-e9f0-g1h2-i3j4k5l6m7n8",
+            "createdAt": "2025-04-03T12:00:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior Over Account Suspension",
+            "description": "The customer contacted support regarding an account suspension. From the beginning of the call, they were hostile and accused the representative of 'stealing their money.'\n\nWhen the representative explained the reason for the suspension, the customer threatened to 'show up at the office' and 'teach everyone a lesson.' The representative reported feeling unsafe and escalated the incident to management."
+        },
+        {
+            "id": "z4a5b6c7-d8e9-f0g1-h2i3-j4k5l6m7n8o9",
+            "createdAt": "2025-04-03T12:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Verbal Abuse Over Refund Request",
+            "description": "The customer called to request a refund for a service they claimed was not delivered. When the representative asked for more details, the customer became aggressive and accused the company of 'scamming' them.\n\nThe representative attempted to explain the refund policy, but the customer interrupted with shouting and profanity. The call was escalated to a supervisor after the customer made a veiled threat about 'taking matters into their own hands.'"
+        },
+        {
+            "id": "a5b6c7d8-e9f0-g1h2-i3j4-k5l6m7n8o9p0",
+            "createdAt": "2025-04-03T12:30:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments in Support Ticket",
+            "description": "The customer submitted a support ticket containing inappropriate comments, including remarks about the representative's appearance. The ticket was flagged for HR review.\n\nThe customer also included a veiled threat about 'taking this to social media' if their issue was not resolved immediately."
+        },
+        {
+            "id": "b6c7d8e9-f0g1-h2i3-j4k5-l6m7n8o9p0q1",
+            "createdAt": "2025-04-03T12:45:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Technical Issue",
+            "description": "The customer called to report a technical issue with their account. When the representative asked for more details, the customer responded with sarcasm and profanity, saying, 'Do I have to do your job for you?'\n\nThe representative remained calm and attempted to troubleshoot the issue, but the customer continued to use abusive language. The call was terminated after the customer made a personal insult about the representative's intelligence."
+        },
+        {
+            "id": "c7d8e9f0-g1h2-i3j4-k5l6-m7n8o9p0q1r2",
+            "createdAt": "2025-04-03T13:00:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Language in Live Chat",
+            "description": "During a live chat session, the customer made several threatening remarks, stating, 'If you don't fix this, I'll make sure you regret it.'\n\nThe chat was terminated after the customer used explicit language. The incident was flagged for immediate escalation to management."
+        },
+        {
+            "id": "d8e9f0g1-h2i3-j4k5-l6m7-n8o9p0q1r2s3",
+            "createdAt": "2025-04-03T13:15:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Insults During Account Inquiry",
+            "description": "The customer contacted support to inquire about their account status. From the beginning of the call, they were hostile and accused the representative of 'lying' about the account details.\n\nWhen the representative attempted to clarify the situation, the customer interrupted with shouting and profanity. The call was escalated after the customer made a threatening remark about 'taking legal action.'"
+        },
+        {
+            "id": "e9f0g1h2-i3j4-k5l6-m7n8-o9p0q1r2s3t4",
+            "createdAt": "2025-04-03T13:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Billing Dispute",
+            "description": "The customer called the support line to dispute a billing charge. During the call, they repeatedly used offensive language, including profanity, directed at the representative. Despite multiple warnings, the customer continued to escalate their tone.\n\nThe representative attempted to de-escalate the situation by explaining the billing process, but the customer interrupted with personal insults. The call was terminated after the customer made a threatening remark about contacting the representative's manager to 'ruin their career.'"
+        },
+        {
+            "id": "f0g1h2i3-j4k5-l6m7-n8o9-p0q1r2s3t4u5",
+            "createdAt": "2025-04-03T13:45:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior Over Refund Request",
+            "description": "The customer called to request a refund for a service they claimed was not delivered. When the representative asked for more details, the customer became aggressive and accused the company of 'scamming' them.\n\nThe representative attempted to explain the refund policy, but the customer interrupted with shouting and profanity. The call was escalated to a supervisor after the customer made a veiled threat about 'taking matters into their own hands.'"
+        },
+        {
+            "id": "g1h2i3j4-k5l6-m7n8-o9p0-q1r2s3t4u5v6",
+            "createdAt": "2025-04-03T14:00:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Verbal Abuse Over Account Access",
+            "description": "The customer contacted support to regain access to their account. From the start, they used offensive language, calling the representative 'incompetent' and 'useless.'\n\nDespite the representative's attempts to assist, the customer continued to escalate their tone, shouting and interrupting repeatedly. The call was terminated after the customer made a personal threat about 'teaching the company a lesson.'"
+        },
+        {
+            "id": "h2i3j4k5-l6m7-n8o9-p0q1-r2s3t4u5v6w7",
+            "createdAt": "2025-04-03T14:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Emails Over Service Downtime",
+            "description": "The customer sent multiple emails to the support team, accusing them of 'sabotaging' their business due to a service outage. The emails contained profanity and threats, including statements like 'I'll make sure you regret this.'\n\nThe incident was escalated to the legal department for further review and action."
+        },
+        {
+            "id": "i3j4k5l6-m7n8-o9p0-q1r2-s3t4u5v6w7x8",
+            "createdAt": "2025-04-03T14:30:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments During Refund Request",
+            "description": "During a call to request a refund, the customer made inappropriate comments about the representative's voice and appearance. Despite being warned to keep the conversation professional, the customer continued to make offensive remarks.\n\nThe call was terminated after the customer used explicit language. The incident was flagged for HR review."
+        },
+        {
+            "id": "j4k5l6m7-n8o9-p0q1-r2s3-t4u5v6w7x8y9",
+            "createdAt": "2025-04-03T14:45:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Aggressive Behavior Over Billing Dispute",
+            "description": "The customer called to dispute a billing charge and immediately began shouting at the representative. They accused the company of 'stealing' their money and used profanity throughout the call.\n\nThe representative attempted to explain the billing process, but the customer interrupted with personal insults. The call was escalated after the customer made a veiled threat about 'taking this to the next level.'"
+        },
+        {
+            "id": "k5l6m7n8-o9p0-q1r2-s3t4-u5v6w7x8y9z0",
+            "createdAt": "2025-04-03T15:00:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Harassment of Support Staff via Chat",
+            "description": "The customer used the live chat feature to repeatedly harass the support representative. They sent multiple messages containing profanity and personal attacks, calling the representative 'stupid' and 'unhelpful.'\n\nThe chat was terminated after the customer refused to comply with warnings to remain professional. The incident was logged for further review."
+        },
+        {
+            "id": "l6m7n8o9-p0q1-r2s3-t4u5-v6w7x8y9z0a1",
+            "createdAt": "2025-04-03T15:15:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Behavior Over Account Suspension",
+            "description": "The customer contacted support to appeal an account suspension. They began the call by accusing the representative of 'ruining their life' and used aggressive language throughout the conversation.\n\nWhen the representative explained the reason for the suspension, the customer threatened to 'take legal action' and 'expose the company.' The incident was escalated to management for further handling."
+        },
+        {
+            "id": "m7n8o9p0-q1r2-s3t4-u5v6-w7x8y9z0a1b2",
+            "createdAt": "2025-04-03T15:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Insults During Technical Support",
+            "description": "The customer called to report a technical issue and immediately began insulting the representative, calling them 'clueless' and 'a waste of time.'\n\nDespite the representative's efforts to assist, the customer continued to escalate their tone and used profanity. The call was terminated after the customer made a personal attack about the representative's competence."
+        },
+        {
+            "id": "n8o9p0q1-r2s3-t4u5-v6w7-x8y9z0a1b2c3",
+            "createdAt": "2025-04-03T15:45:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior Over Refund Request",
+            "description": "The customer called to request a refund and became hostile when asked for more details. They accused the representative of 'stalling' and used profanity throughout the call.\n\nThe representative attempted to explain the refund policy, but the customer interrupted with shouting and personal attacks. The call was escalated after the customer made a threatening remark about 'taking this to the media.'"
+        },
+        {
+            "id": "o9p0q1r2-s3t4-u5v6-w7x8-y9z0a1b2c3d4",
+            "createdAt": "2025-04-03T16:00:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Service Downtime",
+            "description": "The customer called to complain about a service outage and used abusive language throughout the call. They accused the representative of 'not caring' and made personal attacks about their competence.\n\nThe representative attempted to provide updates on the outage, but the customer refused to listen and continued to escalate their tone. The call was terminated after the customer made a threatening remark about 'taking this to court.'"
+        },
+        {
+            "id": "p0q1r2s3-t4u5-v6w7-x8y9-z0a1b2c3d4e5",
+            "createdAt": "2025-04-03T16:15:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments in Support Ticket",
+            "description": "The customer submitted a support ticket containing inappropriate comments about the representative's appearance. The ticket also included profanity and personal attacks.\n\nThe incident was flagged for HR review and escalated to management for further handling."
+        },
+        {
+            "id": "q1r2s3t4-u5v6-w7x8-y9z0-a1b2c3d4e5f6",
+            "createdAt": "2025-04-03T16:30:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Emails Over Billing Dispute",
+            "description": "The customer sent multiple emails to the support team, accusing them of 'stealing' their money and threatening to 'expose the company.'\n\nThe emails contained profanity and personal attacks, calling the support team 'incompetent' and 'lazy.' The incident was escalated to the legal department for further review."
+        },
+        {
+            "id": "r2s3t4u5-v6w7-x8y9-z0a1-b2c3d4e5f6g7",
+            "createdAt": "2025-04-03T16:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior During Account Inquiry",
+            "description": "The customer contacted support to inquire about their account status and immediately began shouting at the representative. They accused the company of 'lying' and used profanity throughout the call.\n\nThe representative attempted to clarify the situation, but the customer refused to listen and continued to escalate their tone. The call was terminated after the customer made a threatening remark about 'taking legal action.'"
+        },
+        {
+            "id": "s3t4u5v6-w7x8-y9z0-a1b2-c3d4e5f6g7h8",
+            "createdAt": "2025-04-03T17:00:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Verbal Abuse Over Refund Request",
+            "description": "The customer called to request a refund and repeatedly insulted the representative, calling them 'useless' and 'a waste of time.'\n\nDespite the representative's attempts to assist, the customer continued to escalate their tone and used profanity. The call was terminated after the customer made a personal attack about the representative's competence."
+        },
+        {
+            "id": "t4u5v6w7-x8y9-z0a1-b2c3-d4e5f6g7h8i9",
+            "createdAt": "2025-04-03T17:15:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Technical Issue",
+            "description": "The customer called to report a technical issue and immediately began using abusive language, calling the representative 'clueless' and 'incompetent.'\n\nThe representative attempted to troubleshoot the issue, but the customer refused to cooperate and continued to escalate their tone. The call was terminated after the customer made a personal insult about the representative's intelligence."
+        },
+        {
+            "id": "u5v6w7x8-y9z0-a1b2-c3d4-e5f6g7h8i9j0",
+            "createdAt": "2025-04-03T17:30:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Behavior Over Account Suspension",
+            "description": "The customer contacted support to appeal an account suspension and immediately began shouting at the representative. They accused the company of 'ruining their life' and used aggressive language throughout the call.\n\nWhen the representative explained the reason for the suspension, the customer threatened to 'take legal action' and 'expose the company.' The incident was escalated to management for further handling."
+        },
+        {
+            "id": "v6w7x8y9-z0a1-b2c3-d4e5-f6g7h8i9j0k1",
+            "createdAt": "2025-04-03T17:45:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments During Live Chat",
+            "description": "During a live chat session, the customer made several inappropriate comments about the representative's appearance. Despite being warned to keep the conversation professional, the customer continued to make offensive remarks.\n\nThe chat was terminated after the customer sent a message containing explicit language. The incident was flagged for HR review."
+        },
+        {
+            "id": "w7x8y9z0-a1b2-c3d4-e5f6-g7h8i9j0k1l2",
+            "createdAt": "2025-04-03T18:00:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior Over Billing Dispute",
+            "description": "The customer called to dispute a billing charge and immediately began shouting at the representative. They accused the company of 'stealing' their money and used profanity throughout the call.\n\nThe representative attempted to explain the billing process, but the customer interrupted with personal insults. The call was escalated after the customer made a veiled threat about 'taking this to the next level.'"
+        },
+        {
+            "id": "x8y9z0a1-b2c3-d4e5-f6g7-h8i9j0k1l2m3",
+            "createdAt": "2025-04-03T18:15:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Insults During Refund Process",
+            "description": "The customer called to follow up on a refund request and repeatedly insulted the representative, calling them 'useless' and 'a waste of time.'\n\nDespite the representative's attempts to assist, the customer continued to escalate their tone and used profanity. The call was terminated after the customer made a personal attack about the representative's competence."
+        },
+        {
+            "id": "y9z0a1b2-c3d4-e5f6-g7h8-i9j0k1l2m3n4",
+            "createdAt": "2025-04-03T18:30:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Abusive Language Over Service Downtime",
+            "description": "The customer called to complain about a service outage and used abusive language throughout the call. They accused the representative of 'not caring' and made personal attacks about their competence.\n\nThe representative attempted to provide updates on the outage, but the customer refused to listen and continued to escalate their tone. The call was terminated after the customer made a threatening remark about 'taking this to court.'"
+        },
+        {
+            "id": "z0a1b2c3-d4e5-f6g7-h8i9-j0k1l2m3n4o5",
+            "createdAt": "2025-04-03T18:45:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Emails Over Billing Dispute",
+            "description": "The customer sent multiple emails to the support team, accusing them of 'stealing' their money and threatening to 'expose the company.'\n\nThe emails contained profanity and personal attacks, calling the support team 'incompetent' and 'lazy.' The incident was escalated to the legal department for further review."
+        },
+        {
+            "id": "a1b2c3d4-e5f6-g7h8-i9j0-k1l2m3n4o5p6",
+            "createdAt": "2025-04-03T19:00:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Repeated Verbal Abuse Over Account Access",
+            "description": "The customer contacted support to regain access to their account. From the start, they used offensive language, calling the representative 'incompetent' and 'useless.'\n\nDespite the representative's attempts to assist, the customer continued to escalate their tone, shouting and interrupting repeatedly. The call was terminated after the customer made a personal threat about 'teaching the company a lesson.'"
+        },
+        {
+            "id": "b2c3d4e5-f6g7-h8i9-j0k1-l2m3n4o5p6q7",
+            "createdAt": "2025-04-03T19:15:00.123Z",
+            "type": "Customer Service Incident",
+            "title": "Inappropriate Comments in Support Ticket",
+            "description": "The customer submitted a support ticket containing inappropriate comments about the representative's appearance. The ticket also included profanity and personal attacks.\n\nThe incident was flagged for HR review and escalated to management for further handling."
+        },
+        {
+            "id": "c3d4e5f6-g7h8-i9j0-k1l2-m3n4o5p6q7r8",
+            "createdAt": "2025-04-03T19:30:00.456Z",
+            "type": "Customer Service Incident",
+            "title": "Hostile Behavior During Account Inquiry",
+            "description": "The customer contacted support to inquire about their account status and immediately began shouting at the representative. They accused the company of 'lying' and used profanity throughout the call.\n\nThe representative attempted to clarify the situation, but the customer refused to listen and continued to escalate their tone. The call was terminated after the customer made a threatening remark about 'taking legal action.'"
+        },
+        {
+            "id": "d4e5f6g7-h8i9-j0k1-l2m3-n4o5p6q7r8s9",
+            "createdAt": "2025-04-03T19:45:00.789Z",
+            "type": "Customer Service Incident",
+            "title": "Threatening Behavior Over Account Suspension",
+            "description": "The customer contacted support to appeal an account suspension and immediately began shouting at the representative. They accused the company of 'ruining their life' and used aggressive language throughout the call.\n\nWhen the representative explained the reason for the suspension, the customer threatened to 'take legal action' and 'expose the company.' The incident was escalated to management for further handling."
+        }
+    ]
+}
