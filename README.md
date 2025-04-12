@@ -1,106 +1,122 @@
-# Create a REST API Stub
+# Create a REST API Stub with nginx ingress and a WAF 
+
+## Overview
+
+Experiment with K8 nginx ingress controller using helm chart deployment. Show that is can be used with ModSecurity WAF and a custom plugin to create rule exclusions. 
+
+The rule exclusions are used to tune the OWASP core rule set and to prevent false  positives.
+
+The idea is to develop a policy for tunning the OWASP core rule set in a K8 environment.  
+
+### References
+
+- [Kubernetes/ingress-nginx modsecurity](https://github.com/kubernetes/ingress-nginx/blob/main/docs/user-guide/third-party-addons/modsecurity.md) : Documentation for ingress
+- [Handling False Positives with the OWASP ModSecurity Core Rule Set](https://www.netnea.com/cms/apache-tutorial-8_handling-false-positives-modsecurity-core-rule-set/): Tutorial on Handling False positives
+- [Core Rule Set with Kubernetes](https://coreruleset.org/docs/5-advanced-topics/5-3-kubernetes-ingress-controller/): Advanced topics on K8s & CRS
+- [Owasp Core Rule Set and Plugin registry](https://coreruleset.org/docs/5-advanced-topics/5-3-kubernetes-ingress-controller/): Github documentation on how to write plugins.
 
 ## Goal
 This project shall: 
-- Create a REST API Stub for Incident Creations and will support basic CRUD.
-- Incidents will contain a: create data, Id, type, title, description
-- The stub will use javascipt and node
-- The stub should use json-serve container image
-- A data file called db.json should be used to seed the rest API
-- The datafile should be generated using faker-js
-- Generating a realistic description for incidents is the key as this will allow us to test the WAF
+- Create a REST API Stub for Incident creation that will support basic CRUD.
+- Incidents will contain an : Id, creation date, type, title, description.
+- The stub should use `json-server` container image.
+- A data file called db.json should be used to seed the rest API.
+- The datafile should be generated using faker-js.
+- Generating a realistic description for incidents is the key as this will allow the testing of the the WAF.
+- Use Kubernetes locally on Docker Desktop.
+- Expose the incidents api on localhost via nginx ingress.
+- Use Helm Chart for nginx ingress and K8 manifests for the rest.
+- Use ModSecurity with Core Rule Set with ingress
+- Use a plugin for rule exclusions.
 
+Note: Although the `faker-js` is used to create fake requests, it is thought AI might be used to create more realistic test data dependent on use case.
 
-I'll help you set up a Node.js project to generate incident data using Faker.js. Here are the steps:
+### Environment set up
 
-1. First, create the project structure and initialize npm:
+Tested with 
+
+- docker destop kubernetes on windows
+- wsl unbuntu used for helm and kubectl
+
+## Prerequisites
+- Docker Desktop with Kubernetes enabled
+- Helm CLI installed
+- kubectl CLI installed
+
+## IDE
+
+Suggested IDE 
+- VSCode
+
+suggested extensions
+
+- Kubernetes
+- REST Cient
+
+and a markdown preview extension
+
+## K8s Stuff
+
+Deploy the incidents service & nginx ingress controller with modsecurity in a incidents namespace.
 
 ```bash
-mkdir -p src
-npm init -y
-npm install @faker-js/faker
+./scripts/1-deploy-incidents.sh
 ```
 
-2. Create a generator script:
-
-````javascript
-const { faker } = require('@faker-js/faker');
-const fs = require('fs');
-
-const INCIDENT_COUNT = 100;
-
-const incidentTypes = [
-  'Security Breach',
-  'System Outage',
-  'Network Issue',
-  'Data Loss',
-  'Application Error'
-];
-
-function generateIncident() {
-  return {
-    id: faker.string.uuid(),
-    createdAt: faker.date.past(),
-    type: faker.helpers.arrayElement(incidentTypes),
-    title: faker.helpers.fake('{{company.catchPhrase}} - {{hacker.verb}} Issue'),
-    description: faker.helpers.multiple(() => faker.hacker.phrase(), {
-      count: { min: 3, max: 6 }
-    }).join(' ')
-  };
-}
-
-const incidents = Array.from({ length: INCIDENT_COUNT }, generateIncident);
-
-const db = {
-  incidents: incidents
-};
-
-fs.writeFileSync('db.json', JSON.stringify(db, null, 2));
-console.log(`Generated ${INCIDENT_COUNT} incidents in db.json`);
-````
-
-3. Add a script to your package.json:
-
-````json
-{
-  "scripts": {
-    "generate": "node src/generator.js"
-  }
-}
-````
-
-Run the generator:
+Clean up the incidents service & nginx ingress controller with modsecurity 
 
 ```bash
-npm run generate
+./scripts/2-cleanup-incidents.sh
 ```
 
-This will create a `db.json` file with randomly generated incidents. Each incident will have:
-- A unique UUID
-- Creation date
-- Incident type from predefined list
-- Generated title combining company and tech terms
-- Multi-sentence description using tech-related phrases
-
-To run the script:
+Redeploy nginx ingress controller after messing about with modsecurity and core rule set (see `app-rules-before.conf`).
 
 ```bash
-npm run test-api
+./scripts/3-update-ingress.sh
+```
+
+Note: for ingress controller config changes in `ingress-controller-values.yaml`
+see `# edit-start` within the yaml config. 
+
+## Testing
+
+Using REST Client extension in VSCode. Open file and use inline. 
+
+```bash
+client/test.http
+```
+
+## Node Stuff
+
+### Install package
+
+```bash
+npm install
+```
+
+### Create new test data
+
+To run the test data generator:
+
+```bash
+npm run generate-incidents
+```
+
+This will create a `db.json` file with randomly generated incidents using `faker-js`. Each incident will have:
+- **id**: A unique UUID
+- **createdAt**: Creation date
+- **type**: Incident type from predefined list
+- **title**: Generated title combining company and tech terms
+- **description**: Multi-sentence description using tech-related phrases
+
+### Call the Incident API
+
+To call the incidents API with test data:
+
+```bash
+npm run call-incidents
 ```
 
 This script will:
-
-- Get all incidents
-- Create a new incident
-- Update an existing incident's description
-- Delete an incident
-
-Make sure your json-server is running before executing this script. The script assumes json-server is running on the default port 3000.
-
-Faker-js was used to create initial test data. Then copilot was used to create additional test data. The following descriptions were used to generate test data.
-
-Update the descriptions in each incident so that the description describes customer service incidents which involve bad language , abusive behavior and has raised concerns for customers service representatives
-
-Create 20 further incidents items based on the existing entries. Use characters and words that are likely to cause 403 response from the OWASP core rule set, which could be consider to be false positives. 
-
-Create an additional 40 incidents so that the description describes customer service incidents which involve bad language , abusive behavior and has raised safeguarding concerns for customers service representatives. Each description could contain multiple paragraphs and punctuation.
+- Call incidents api using `axios`
+- Use the `request-incidents.json` 

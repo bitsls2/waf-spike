@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: incidents-api
+  namespace: incidents
+spec:
+  selector:
+    app: incidents-api
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP

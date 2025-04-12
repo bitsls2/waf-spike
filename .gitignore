@@ -8,6 +8,11 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# K8
+k8s/old/*
+kubectl*
+
+
 # IDE specific files
 .vscode/
 

@@ -5,9 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "generate": "node src/generate-data.js",
-    "test-api": "node src/generate-requests.js",
-    "test-api-v2": "node src/generate-requests-v2.js"
+    "generate-incidents": "node src/generate-data.js",
+    "call-incidents": "node src/generate-requests.js"
   },
   "keywords": [],
   "author": "",

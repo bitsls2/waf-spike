@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: incidents-api
+  namespace: incidents
+  labels:
+    app: incidents-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: incidents-api
+  template:
+    metadata:
+      labels:
+        app: incidents-api
+    spec:
+      containers:
+        - name: json-server
+          image: codfish/json-server:0.17.3
+          resources:
+            limits:
+              cpu: "500m"
+              memory: "256Mi"
+            requests:
+              cpu: "200m"
+              memory: "128Mi"
+          ports:
+            - containerPort: 80
+          volumeMounts:
+            - name: data
+              mountPath: /app/db.json
+              subPath: db.json
+      volumes:
+        - name: data
+          configMap:
+            name: incidents-data

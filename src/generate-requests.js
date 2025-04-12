@@ -1,48 +1,55 @@
 const axios = require('axios');
-const { faker } = require('@faker-js/faker');
+const fs = require('fs');
+const path = require('path');
 
-const API_URL = 'http://localhost:9999';
+const API_URL = 'http://localhost';
+const REQUEST_DATA_PATH = path.join(__dirname, '../data/request-incidents.json');
 
-const incidentTypes = [
-    'Security Breach',
-    'System Outage',
-    'Network Issue',
-    'Data Loss',
-    'Application Error'
-];
+async function processIncident(incident) {
+    try {
+        // Create new incident (without the id field)
+        const { id, ...newIncident } = incident;
+        const createResponse = await axios.post(`${API_URL}/incidents`, newIncident);
+        console.log('Created incident:', createResponse.data.id);
+
+        // Update the incident with a modified description
+        const updateData = {
+            description: `Updated: ${incident.description}`
+        };
+        const updateResponse = await axios.patch(
+            `${API_URL}/incidents/${createResponse.data.id}`,
+            updateData
+        );
+        console.log('Updated incident:', updateResponse.data.id);
+
+        return createResponse.data.id;
+    } catch (error) {
+        console.error(`Error processing incident: ${error.message}`);
+        return null;
+    }
+}
 
 async function generateRequests() {
     try {
-        // Get all incidents
-        const getAllResponse = await axios.get(`${API_URL}/incidents`);
-        console.log('GET all incidents:', getAllResponse.status);
+        // Read sample incident data
+        const rawData = fs.readFileSync(REQUEST_DATA_PATH);
+        const sampleData = JSON.parse(rawData);
 
-        // Create new incident
-        const newIncident = {
-            createdAt: faker.date.past(),
-            type: faker.helpers.arrayElement(incidentTypes),
-            title: faker.helpers.fake('{{company.catchPhrase}} - {{hacker.verb}} Issue'),
-            description: faker.helpers.multiple(() => faker.hacker.phrase(), {
-                count: { min: 3, max: 6 }
-            }).join(' ')
-        };
+        // Get initial count
+        const initialResponse = await axios.get(`${API_URL}/incidents`);
+        console.log('Initial incident count:', initialResponse.data.length);
 
-        const createResponse = await axios.post(`${API_URL}/incidents`, newIncident);
-        console.log('Created incident:', createResponse.data);
+        // Process each incident in sequence
+        const createdIds = [];
+        for (const incident of sampleData.incidents) {
+            const id = await processIncident(incident);
+            if (id) createdIds.push(id);
+        }
 
-        // Update an existing incident
-        const updateId = getAllResponse.data[0].id;
-        const updateResponse = await axios.patch(`${API_URL}/incidents/${updateId}`, {
-            description: faker.helpers.multiple(() => faker.hacker.phrase(), {
-                count: { min: 2, max: 4 }
-            }).join(' ')
-        });
-        console.log('Updated incident:', updateResponse.data);
-
-        // Delete an incident
-        const deleteId = getAllResponse.data[1].id;
-        const deleteResponse = await axios.delete(`${API_URL}/incidents/${deleteId}`);
-        console.log('Deleted incident:', deleteId);
+        // Get final count
+        const finalResponse = await axios.get(`${API_URL}/incidents`);
+        console.log('Final incident count:', finalResponse.data.length);
+        console.log('Successfully processed incidents:', createdIds.length);
 
     } catch (error) {
         console.error('Error:', error.message);

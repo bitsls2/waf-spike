@@ -1,5 +1,12 @@
-{
-    "incidents": [
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: incidents-data
+  namespace: incidents
+data:
+  db.json: |
+    {
+      "incidents": [
         {
             "id": "3c234027-4b51-4f5f-89f5-b7a11be77db0",
             "createdAt": "2025-03-12T08:16:09.940Z",
@@ -687,4 +694,4 @@
             "description": "During a live chat session, the customer made several inappropriate comments about the representative's appearance. Despite being warned to keep the conversation professional, the customer continued to make offensive remarks.\n\nThe chat was terminated after the customer sent a message containing explicit language. The incident was flagged for HR review."
         }
     ]
-}
+    }
