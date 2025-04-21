@@ -1,0 +1,51 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: init-db-json
+  namespace: incidents
+spec:
+  template:
+    spec:
+      containers:
+        - name: init-data
+          image: busybox
+          command: ["/bin/sh", "-c"]
+          args:
+            - |
+              cat > /data/db.json << EOF
+              {
+                "incidents": [
+                  {
+                  "id": "eff43a9a-9515-41f0-ac63-4ed77d461a50",
+                  "createdAt": "2025-01-24T03:59:57.696Z",
+                  "type": "Application Error",
+                  "title": "Integrated user-facing focus group - index Issue",
+                  "description": "I'll copy the cross-platform HTTP alarm, that should driver the PNG alarm! I'll hack the multi-byte SMS panel, that should sensor the RSS pixel! The XSS microchip is down, synthesize the optical firewall so we can hack the SQL sensor! Try to index the AGP sensor, maybe it will synthesize the redundant bandwidth!"
+                  },
+                  {
+                    "id": "85eb238d-3523-4a90-a3db-bf4c7c09d5fd",
+                    "createdAt": "2024-12-03T22:49:25.671Z",
+                    "type": "Application Error",
+                    "title": "Synchronised system-worthy product - hack Issue",
+                    "description": "programming the driver won't do anything, we need to compress the open-source ASCII capacitor! compressing the firewall won't do anything, we need to index the primary CSS microchip! Use the optical TCP application, then you can quantify the mobile interface! The SDD transmitter is down, bypass the 1080p application so we can parse the SMTP bandwidth! transmitting the bandwidth won't do anything, we need to synthesize the solid state UTF8 bandwidth!"
+                  },
+                  {
+                    "id": "be7995e4-fa69-486f-94e1-0253120bad3b",
+                    "createdAt": "2024-10-15T15:27:07.662Z",
+                    "type": "Data Loss",
+                    "title": "Persistent dynamic architecture - quantify Issue",
+                    "description": "You can't quantify the port without calculating the mobile HDD circuit! overriding the monitor won't do anything, we need to reboot the redundant UDP matrix! Try to reboot the DNS card, maybe it will parse the primary application!"
+                  }
+                ]
+              }
+              EOF
+              # Ensure proper permissions for the directory
+              chmod 777 /data
+          volumeMounts:
+            - name: data
+              mountPath: /data
+      restartPolicy: Never
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: incidents-data-pvc

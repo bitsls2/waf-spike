@@ -1,11 +1,22 @@
 ### request first incident
-http://localhost:80/incidents/3c234027-4b51-4f5f-89f5-b7a11be77db0
+http://localhost:80/incidents/eff43a9a-9515-41f0-ac63-4ed77d461a50
 
 
 ### update first incident
-PATCH  http://localhost/incidents/3c234027-4b51-4f5f-89f5-b7a11be77db0
+PATCH  http://localhost/incidents/eff43a9a-9515-41f0-ac63-4ed77d461a50
 Content-Type: application/json
 
 {
   "description": "Look at this new description Mr Drop Table "
+}
+
+### create incident
+POST  http://localhost/incidents
+Content-Type: application/json
+
+{
+   "createdAt": "2025-01-24T03:59:57.696Z",
+   "type": "Application Error",
+   "title": "Integrated user-facing focus group - index Issue",
+   "description": "I'll copy the cross-platform HTTP alarm, that should driver the PNG alarm! I'll hack the multi-byte SMS panel, that should sensor the RSS pixel! The XSS microchip is down, synthesize the optical firewall so we can hack the SQL sensor! Try to index the AGP sensor, maybe it will synthesize the redundant bandwidth!"
 }

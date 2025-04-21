@@ -1,0 +1,9 @@
+services:
+  api:
+    image: my-json-server:latest
+    ports:
+      - 9999:80
+    volumes:
+      - ./data/db.json:/app/db.json:delegated
+#    environment:
+#      VIRTUAL_HOST: typescript.json-server.docker

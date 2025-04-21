@@ -23,13 +23,20 @@ kubectl delete configmap modsec-app-rules --namespace incidents || true
 echo "Removing backend resources..."
 kubectl delete service incidents-api --namespace incidents || true
 kubectl delete deployment incidents-api --namespace incidents || true
-kubectl delete configmap incidents-data --namespace incidents || true
+
+
+# Remove PVC and related resources
+echo "Removing PersistentVolumeClaim..."
+kubectl delete pods --namespace incidents --selector=job-name=init-db-json || true
+kubectl delete pvc incidents-data-pvc --namespace incidents || true
+kubectl delete job init-db-json --namespace incidents || true
+
+# Reset default namespace
+kubectl config set-context --current --namespace=default
 
 # Remove namespace
 echo "Removing incidents namespace..."
 kubectl delete namespace incidents || true
 
-# Reset default namespace
-kubectl config set-context --current --namespace=default
 
 echo "Cleanup complete. You can now run the deployment script again."

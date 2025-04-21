@@ -66,8 +66,10 @@ controller:
       SecPcreMatchLimitRecursion 100000
       Include /etc/nginx/owasp-modsecurity-crs/plugins/app-rules-before.conf
       Include /etc/nginx/owasp-modsecurity-crs/nginx-modsecurity.conf
+      SecAuditLog /var/log/audit/audit.log
       SecAuditLogStorageDir /var/log/audit/
-      SecAuditLogType Concurrent
+      SecAuditLogFormat JSON
+      SecAuditLogType Serial
       SecAuditLogParts ABIJDEFHZ
       SecAuditEngine RelevantOnly
   # edit-end
@@ -695,6 +697,8 @@ controller:
   extraVolumeMounts:
     - name: plugins
       mountPath: /etc/nginx/owasp-modsecurity-crs/plugins
+    - name: audit-logs
+      mountPath: /var/log/audit
   #  - name: copy-portal-skins
   #   mountPath: /var/lib/lemonldap-ng/portal/skins
 
@@ -703,6 +707,8 @@ controller:
     - name: plugins
       configMap:
         name: modsec-app-rules
+    - name: audit-logs
+      emptyDir: {}
   #  - name: copy-portal-skins
   #    emptyDir: {}
   # edit-end

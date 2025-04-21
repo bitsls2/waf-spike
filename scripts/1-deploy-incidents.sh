@@ -14,7 +14,8 @@ kubectl config set-context --current --namespace=incidents
 
 # Create backend incidents api based on json-server & configmap json
 cd k8s/incident-api 
-kubectl apply -f configmap.yaml
+kubectl apply -f pvc.yaml
+kubectl apply -f init-job.yaml
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 cd ../..

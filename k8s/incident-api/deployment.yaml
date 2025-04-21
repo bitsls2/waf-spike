@@ -17,7 +17,15 @@ spec:
     spec:
       containers:
         - name: json-server
-          image: codfish/json-server:0.17.3
+          image: docker.io/bitsls2/json-server:latest
+          securityContext:
+            runAsNonRoot: true
+            runAsUser: 1000
+            runAsGroup: 1000
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
           resources:
             limits:
               cpu: "500m"
@@ -29,9 +37,8 @@ spec:
             - containerPort: 80
           volumeMounts:
             - name: data
-              mountPath: /app/db.json
-              subPath: db.json
+              mountPath: /app
       volumes:
         - name: data
-          configMap:
-            name: incidents-data
+          persistentVolumeClaim:
+            claimName: incidents-data-pvc
