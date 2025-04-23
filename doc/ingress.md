@@ -136,4 +136,71 @@ docker buildx build \
   json-server/
 ````
 
+# Configuring ModSecurity Audit Logging
+
+To configure ModSecurity audit logging in the ingress-nginx controller, update the ingress-controller-values.yaml with the following configuration:
+
+````yaml
+controller:
+  config:
+    # ...existing modsecurity config...
+    modsecurity-snippet: |
+      SecRuleEngine On
+      SecRequestBodyAccess On
+      SecResponseBodyAccess On
+      
+      # Audit Log Configuration
+      SecAuditEngine RelevantOnly
+      SecAuditLogParts ABIJDEFHZ
+      SecAuditLogType Serial
+      SecAuditLog /var/log/audit/audit.log
+      SecAuditLogStorageDir /var/log/audit/
+      
+      # Audit Log Format
+      SecAuditLogFormat JSON
+      
+      # Include existing rules
+      Include /etc/nginx/owasp-modsecurity-crs/plugins/app-rules-before.conf
+      Include /etc/nginx/owasp-modsecurity-crs/nginx-modsecurity.conf
+````
+
+Then add a volume mount for the audit logs:
+
+````yaml
+  extraVolumeMounts:
+    - name: audit-logs
+      mountPath: /var/log/audit
+    # ...existing volume mounts...
+
+  extraVolumes:
+    - name: audit-logs
+      emptyDir: {}
+    # ...existing volumes...
+````
+
+To verify the logs are being written:
+
+```bash
+# Get the ingress controller pod name
+POD_NAME=$(kubectl get pods -n incidents -l app.kubernetes.io/name=ingress-nginx-controller -o jsonpath='{.items[0].metadata.name}')
+
+# View the audit logs
+kubectl exec -n incidents $POD_NAME -- tail -f /var/log/audit/audit.log
+```
+
+## Audit logs
+
+
+
+The audit log parts (ABIJDEFHZ) represent:
+- A: Audit log header
+- B: Request headers
+- I: Request body
+- J: Upload files
+- D: Response headers
+- E: Response body
+- F: Audit log trailer
+- H: Audit log header (additional data)
+- Z: End of entry marker
+
 

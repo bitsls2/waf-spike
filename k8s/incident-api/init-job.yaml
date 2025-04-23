@@ -6,9 +6,26 @@ metadata:
 spec:
   template:
     spec:
+      # Pod level security context
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 1000
+        runAsGroup: 1000
+        fsGroup: 1000
+        seccompProfile:
+          type: RuntimeDefault
       containers:
         - name: init-data
           image: busybox
+          # Container level security context
+          securityContext:
+            allowPrivilegeEscalation: false
+            capabilities:
+              drop:
+                - ALL
+            readOnlyRootFilesystem: true
+            seccompProfile:
+              type: RuntimeDefault
           command: ["/bin/sh", "-c"]
           args:
             - |
@@ -39,8 +56,8 @@ spec:
                 ]
               }
               EOF
-              # Ensure proper permissions for the directory
-              chmod 777 /data
+              # Change to more restrictive permissions
+              chmod 664 /data/db.json
           volumeMounts:
             - name: data
               mountPath: /data
