@@ -13,9 +13,15 @@ kubectl create namespace incidents || true
 kubectl config set-context --current --namespace=incidents
 
 # Create backend incidents api based on json-server & configmap json
-cd k8s/incident-api 
+cd k8s/incident-api
 kubectl apply -f pvc.yaml
 kubectl apply -f init-job.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+cd ../..
+
+# create albedo service
+cd k8s/albedo
 kubectl apply -f deployment.yaml
 kubectl apply -f service.yaml
 cd ../..

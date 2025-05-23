@@ -3,7 +3,7 @@ const fs = require('fs');
 const path = require('path');
 
 const API_URL = 'http://localhost';
-const REQUEST_DATA_PATH = path.join(__dirname, '../data/request-incidents.json');
+const REQUEST_DATA_PATH = path.join(__dirname, '../data/data.json');
 
 async function processIncident(incident) {
     try {

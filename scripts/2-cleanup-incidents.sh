@@ -20,10 +20,14 @@ echo "Removing ModSecurity ConfigMap..."
 kubectl delete configmap modsec-app-rules --namespace incidents || true
 
 # Remove backend resources
-echo "Removing backend resources..."
+echo "Removing backend incident-api resources..."
 kubectl delete service incidents-api --namespace incidents || true
 kubectl delete deployment incidents-api --namespace incidents || true
 
+# Remove backend resources
+echo "Removing backend Albedo resources..."
+kubectl delete service incidents-api --namespace incidents || true
+kubectl delete deployment incidents-api --namespace incidents || true
 
 # Remove PVC and related resources
 echo "Removing PersistentVolumeClaim..."

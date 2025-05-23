@@ -12,10 +12,17 @@ spec:
     - host: localhost
       http:
         paths:
-          - path: /
+          - path: /incidents
             pathType: Prefix
             backend:
               service:
                 name: incidents-api
+                port:
+                  number: 80
+          - path: /albedo
+            pathType: Prefix
+            backend:
+              service:
+                name: albedo
                 port:
                   number: 80

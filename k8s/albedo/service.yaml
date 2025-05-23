@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: albedo
+  namespace: incidents
+spec:
+  selector:
+    app: albedo
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
+  type: ClusterIP
